@@ -12,8 +12,9 @@ Creates the following resources:
 ## Usage
 
 ```hcl
-module "rds_cloudwatch_logs" {
-  source = "../../modules/aws-rds-cloudwatch-logs"
+module "rds-cloudwatch-logs" {
+  source  = "trussworks/rds-cloudwatch-logs/aws"
+  version = "1.0.0"
 
   env_cloudwatch_logs_group  = "rds-app-staging"
   env_db_instance_identifier = "app-staging"
